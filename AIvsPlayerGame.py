@@ -4,7 +4,7 @@ theCode = {'pin1': 0,
            'pin4': 0,
            'codeSet': False,
            'firstRound': True,
-           'setAlgorithm': 2
+           'setAlgorithm': 3
            }
 
 timesClicked = {'timesClickedPin1':0,
@@ -14,7 +14,7 @@ timesClicked = {'timesClickedPin1':0,
 
 goodBadClickedFinal = {'black': 0,
                        'white': 0,
-                       'grey': 0}
+                       'grey': -4}
 
 goodBadClicked = {'timesClickedPin1':0,
                   'timesClickedPin2':0,
@@ -22,6 +22,14 @@ goodBadClicked = {'timesClickedPin1':0,
                   'timesClickedPin4':0}
 
 row = 0
+
+listPossibleCodes = []
+
+def setListWithPosibbleCodes():
+    global ListPossiblecode
+    for number in range(1111, 6667):
+        listPossibleCodes.append(number)
+    return listPossibleCodes
 
 def colorCode(clicked):
     if clicked == 0:
@@ -39,7 +47,7 @@ def colorCode(clicked):
     elif clicked == 6:
         return 'blue'
     else:
-        print("unknown error")
+        print("colorCode error")
 
 def changeColor(pinNumber):
     global timesClicked
@@ -79,11 +87,19 @@ def setGoodOrBad():
             goodBadClickedFinal['white'] += 1
         elif item == 0:
             goodBadClickedFinal['grey'] += 1
+
 def setGoodOrBadToZero():
     global goodBadClickedFinal
     goodBadClickedFinal['black'] = 0
     goodBadClickedFinal['white'] = 0
     goodBadClickedFinal['grey'] = 0
+
+def setPinsClicked0():
+    global timesClicked
+    timesClicked = {'timesClickedPin1': 0,
+                    'timesClickedPin2': 0,
+                    'timesClickedPin3': 0,
+                    'timesClickedPin4': 0}
 
 def setRow():
     global row

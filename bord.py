@@ -1,8 +1,13 @@
 import tkinter as tk
-from AIvsPlayerGame import changeColor, setCode, theCode, setRow, getRow, changeGoodOrBad, colorCode, setGoodOrBad, goodBadClickedFinal
+from AIvsPlayerGame import changeColor, setCode, theCode, setRow, getRow, changeGoodOrBad, colorCode, setGoodOrBad, \
+    goodBadClickedFinal, setGoodOrBadToZero, setPinsClicked0
 from Algorithm1 import responseAlgorithm1
 from Algorithm2 import responseAlgorithm2
+from AlgoritmeSelfConstructed import theAlgorithm
+from algorithm2TestFase import algorithmIn5Steps
 
+possibleCodesLeft = []
+lastGuess = []
 
 class Program(tk.Tk):
     """__init__ is een speciale functie. Wanneer je een object van deze class aanmaakt hoef je deze functie niet
@@ -87,7 +92,7 @@ class AIvsPlayer(tk.Frame):
         frame5 = tk.Frame(self, bg="grey")
 
         """in frame 3 is alleen het antwoord van het langste algoritme te vinden."""
-        uitkomstAlgorithm1 = tk.Label(frame3, text="", bg='grey', font="Arial 18 bold")
+        uitkomstAlgorithm = tk.Label(frame3, text="", bg='grey', font="Arial 18 bold")
 
         """In frame 4 is een tabel met 4 x 10 buttons te vinden waarin de speler kan aangegeven in hoeverre de pinnen
         ingevuld door de AI goed zijn."""
@@ -134,7 +139,7 @@ class AIvsPlayer(tk.Frame):
         statusbar = tk.Label(self, bd=1, relief=tk.SUNKEN, padx=10, pady=20,
                              bg="light blue", text="Copyright© Freek Gerrits Jans")
 
-        uitkomstAlgorithm1.pack(side=tk.TOP)
+        uitkomstAlgorithm.pack(side=tk.TOP)
         frame3.pack(side=tk.TOP,  expand=tk.TRUE)
 
         algorithmButton1.pack(side=tk.LEFT, anchor='w', fill=tk.X, padx=5, pady=5)
@@ -181,19 +186,27 @@ class AIvsPlayer(tk.Frame):
             else:
                 blackWhiteBlanco = changeGoodOrBad(pinNumber)
                 if pinNumber == 1:
-                    f4grid[getRow()-1][4].config(bg="{}".format(blackWhiteBlanco))
+                    print("getRow:", getRow())
+                    f4grid[getRow()][4].config(bg="{}".format(blackWhiteBlanco))
                 elif pinNumber == 2:
-                    f4grid[getRow()-1][5].config(bg="{}".format(blackWhiteBlanco))
+                    f4grid[getRow()][5].config(bg="{}".format(blackWhiteBlanco))
                 elif pinNumber == 3:
-                    f4grid[getRow()-1][6].config(bg="{}".format(blackWhiteBlanco))
+                    f4grid[getRow()][6].config(bg="{}".format(blackWhiteBlanco))
                 elif pinNumber == 4:
-                    f4grid[getRow()-1][7].config(bg="{}".format(blackWhiteBlanco))
-
-
-
+                    f4grid[getRow()][7].config(bg="{}".format(blackWhiteBlanco))
 
         def configEnter():
+            global possibleCodesLeft
+            global lastGuess
+            if theCode['firstRound'] == False:
+                setRow()
             setGoodOrBad()
+            finalState = goodBadClickedFinal['black']
+            setPinsClicked0()
+            if finalState == 4:
+                uitkomstAlgorithm.config(text="""The AI have guessed the game!""", font="Arial 25 bold")
+                theCode['gameWon'] = True
+                return
 
             if theCode['codeSet'] == False:
                 setCode()
@@ -210,7 +223,7 @@ class AIvsPlayer(tk.Frame):
                 for colorNumber in AIquesses[0]:
                     AIquessesInColor.append(colorCode(colorNumber))
 
-                uitkomstAlgorithm1.config(text="""De code code is {}, {}, {}, {} en dit heeft het algoritme {} beurten
+                uitkomstAlgorithm.config(text="""De code is {}, {}, {}, {} en dit heeft het algoritme {} beurten
                 gekost.""".format(AIquessesInColor[0], AIquessesInColor[1], AIquessesInColor[2], AIquessesInColor[3], AIquesses[1]))
 
 
@@ -221,15 +234,30 @@ class AIvsPlayer(tk.Frame):
 
             if theCode['setAlgorithm'] == 2:
                 colorResponseAI2 = []
-                responseAI2 = responseAlgorithm2()
+                responseAI2 = algorithmIn5Steps((goodBadClickedFinal['black'], goodBadClickedFinal['white']))
                 for item in responseAI2:
                     colorResponseAI2.append(colorCode(item))
 
                 for pin in range(4):
                     f5grid[getRow()][pin].config(bg='{}'.format(colorResponseAI2[pin]))
 
-            setRow()
-                
+            if theCode['setAlgorithm'] == 3:
+                colorResponseAI2X = []
+                responseAI2X = theAlgorithm(possibleCodesLeft, (goodBadClickedFinal['black'], goodBadClickedFinal['white']), lastGuess)
+                print("goodbad:", goodBadClickedFinal)
+                for item in responseAI2X[0]:
+                    colorResponseAI2X.append(colorCode(item))
+                for pin in range(4):
+                    f5grid[getRow()][pin].config(bg='{}'.format(colorResponseAI2X[pin]))
+
+                possibleCodesLeft = responseAI2X[1]
+
+                lastGuessInt = [responseAI2X[0][0], responseAI2X[0][1], responseAI2X[0][2], responseAI2X[0][3]]
+                lastGuess = ""
+                for item in lastGuessInt:
+                    lastGuess += str(item)
+
+            setGoodOrBadToZero()
             theCode['firstRound'] = False
 
 class SpelUitleg(tk.Frame):
