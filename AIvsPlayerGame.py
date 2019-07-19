@@ -1,10 +1,12 @@
+from itertools import product
+
 theCode = {'pin1': 0,
            'pin2': 0,
            'pin3': 0,
            'pin4': 0,
            'codeSet': False,
            'firstRound': True,
-           'setAlgorithm': 3
+           'setAlgorithm': 1
            }
 
 timesClicked = {'timesClickedPin1':0,
@@ -13,8 +15,7 @@ timesClicked = {'timesClickedPin1':0,
                 'timesClickedPin4':0}
 
 goodBadClickedFinal = {'black': 0,
-                       'white': 0,
-                       'grey': -4}
+                       'white': 0}
 
 goodBadClicked = {'timesClickedPin1':0,
                   'timesClickedPin2':0,
@@ -25,8 +26,22 @@ row = 0
 
 listPossibleCodes = []
 
+def masterReset():
+    global theCode
+    global row
+    row = 0
+    theCode = {'pin1': 0,
+           'pin2': 0,
+           'pin3': 0,
+           'pin4': 0,
+           'codeSet': False,
+           'firstRound': True,
+           'setAlgorithm': 0
+           }
+    setGoodOrBadToZero()
+    setPinsClickedToZero()
+
 def setListWithPosibbleCodes():
-    global ListPossiblecode
     for number in range(1111, 6667):
         listPossibleCodes.append(number)
     return listPossibleCodes
@@ -80,26 +95,31 @@ def changeGoodOrBad(pinNumber):
 def setGoodOrBad():
     global goodBadClickedFinal
     for item in goodBadClicked.values():
-
         if item == 2:
             goodBadClickedFinal['black'] += 1
         elif item == 1:
             goodBadClickedFinal['white'] += 1
-        elif item == 0:
-            goodBadClickedFinal['grey'] += 1
 
 def setGoodOrBadToZero():
     global goodBadClickedFinal
     goodBadClickedFinal['black'] = 0
     goodBadClickedFinal['white'] = 0
-    goodBadClickedFinal['grey'] = 0
 
-def setPinsClicked0():
-    global timesClicked
-    timesClicked = {'timesClickedPin1': 0,
+def setPinsClickedToZero():
+    global goodBadClicked
+    goodBadClicked = {'timesClickedPin1': 0,
                     'timesClickedPin2': 0,
                     'timesClickedPin3': 0,
                     'timesClickedPin4': 0}
+
+def possibleCodes(aantalKleuren, lengthOfCode):
+    colors = ''
+    for color in range(aantalKleuren):
+        colors += str(color + 1)
+    listWithPossibleCodes = list(product(colors, repeat=lengthOfCode))
+    for codeIndex in range(len(listWithPossibleCodes)):
+        listWithPossibleCodes[codeIndex] = "".join(listWithPossibleCodes[codeIndex])
+    return listWithPossibleCodes
 
 def setRow():
     global row

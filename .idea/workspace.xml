@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/bord.py" line="24" />
-    <bookmark url="file://$PROJECT_DIR$/bord.py" line="130" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/bord.py" line="22" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89fe7570-548e-457b-a084-2dfe1fa51fbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Analytical computing/Analytical-Computing-Python-Programs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Analytical computing/Analytical-Computing-Python-Programs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Analytical computing/Analytical-Computing-Python-Programs/opdracht1 magisch vierkant/magische-vierkant.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Analytical computing/Analytical-Computing-Python-Programs/opdracht1 magisch vierkant/magische-vierkant.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AIvsPlayerGame.py" beforeDir="false" afterPath="$PROJECT_DIR$/AIvsPlayerGame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm1.py" beforeDir="false" afterPath="$PROJECT_DIR$/bad_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm2.py" beforeDir="false" afterPath="$PROJECT_DIR$/regular_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgoritmeSelfConstructed.py" beforeDir="false" afterPath="$PROJECT_DIR$/good_algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgoritmeTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm2TestFase.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/bord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="200" column="46" selection-start-line="200" selection-start-column="46" selection-end-line="200" selection-end-column="46" />
+            <state relative-caret-position="1030">
+              <caret line="262" column="23" selection-start-line="262" selection-start-column="23" selection-end-line="262" selection-end-column="23" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -38,12 +41,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AlgoritmeSelfConstructed.py">
+        <entry file="file://$PROJECT_DIR$/good_algorithm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="9">
+              <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#60#0" expanded="true" />
+                <element signature="e#112#231#0" />
+                <element signature="e#241#360#0" />
+                <element signature="e#2266#2842#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bad_algorithm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <element signature="e#1#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,18 +70,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AIvsPlayerGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
               <folding>
-                <element signature="e#467#609#0" />
-                <element signature="e#680#810#0" />
-                <element signature="e#840#1191#0" />
-                <element signature="e#1225#1572#0" />
-                <element signature="e#1895#2252#0" />
-                <element signature="e#2278#2553#0" />
+                <element signature="e#632#885#0" />
+                <element signature="e#645#775#0" />
+                <element signature="e#805#1158#0" />
+                <element signature="e#1192#1539#0" />
+                <element signature="e#1862#2219#0" />
+                <element signature="e#2577#2677#0" />
+                <element signature="e#2706#2901#0" />
+                <element signature="e#3346#3674#0" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regular_algorithm.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -82,6 +107,9 @@
       <find>font</find>
       <find>getResponseAI</find>
       <find>setGood</find>
+      <find>1121</find>
+      <find>pri</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,22 +125,24 @@
         <option value="$PROJECT_DIR$/AI vs player.py" />
         <option value="$PROJECT_DIR$/MastermindAI.py" />
         <option value="$PROJECT_DIR$/Algorithm1.py" />
-        <option value="$PROJECT_DIR$/AlgoritmeTest.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/AlgoritmeSelfConstructed.py" />
+        <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/AlgoritmeTest.py" />
         <option value="$PROJECT_DIR$/algorithm2TestFase.py" />
         <option value="$PROJECT_DIR$/Algorithm2.py" />
-        <option value="$PROJECT_DIR$/test2.py" />
-        <option value="$PROJECT_DIR$/AlgoritmeSelfConstructed.py" />
-        <option value="$PROJECT_DIR$/AIvsPlayerGame.py" />
+        <option value="$PROJECT_DIR$/crap.py" />
         <option value="$PROJECT_DIR$/bord.py" />
+        <option value="$PROJECT_DIR$/good_algorithm.py" />
+        <option value="$PROJECT_DIR$/AIvsPlayerGame.py" />
+        <option value="$PROJECT_DIR$/bad_algorithm.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2143" />
-    <option name="y" value="-29" />
-    <option name="width" value="501" />
-    <option name="height" value="465" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -139,8 +169,11 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -171,7 +204,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlgoritmeSelfConstructed.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\freek\Documents\ICT\IPASS\Mastermind_Program\good_algorithm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -311,23 +344,24 @@
       <workItem from="1562341679027" duration="624000" />
       <workItem from="1562705388658" duration="4443000" />
       <workItem from="1562839270270" duration="420000" />
-      <workItem from="1562839721342" duration="61484000" />
+      <workItem from="1562839721342" duration="71121000" />
+      <workItem from="1563356376387" duration="18011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217755000" />
+    <option name="totallyTimeSpent" value="245403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1456" height="916" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.41908714" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3195021" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32950193" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3422733" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3708166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33716476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,7 +376,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3297587" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
     <layout-to-restore>
@@ -381,7 +415,7 @@
     <SUITE FILE_PATH="coverage/Mastermind_Program$algorithm2TestFase.coverage" NAME="algorithm2TestFase Coverage Results" MODIFIED="1562926176513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mastermind_Program$MastermindAI.coverage" NAME="MastermindAI Coverage Results" MODIFIED="1560787525905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mastermind_Program$Algorithm2.coverage" NAME="Algorithm2 Coverage Results" MODIFIED="1561207743565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Mastermind_Program$bord.coverage" NAME="bord Coverage Results" MODIFIED="1563284480594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mastermind_Program$bord.coverage" NAME="bord Coverage Results" MODIFIED="1563530243214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mastermind_Program$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1562955328239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mastermind_Program$AlgoritmeSelfConstructed.coverage" NAME="AlgoritmeSelfConstructed Coverage Results" MODIFIED="1563225686888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -406,50 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AlgoritmeTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm2TestFase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1354042035/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -464,35 +454,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AlgoritmeSelfConstructed.py">
+    <entry file="file://$PROJECT_DIR$/test2.py" />
+    <entry file="file://$PROJECT_DIR$/AlgoritmeTest.py" />
+    <entry file="file://$PROJECT_DIR$/algorithm2TestFase.py" />
+    <entry file="file://$PROJECT_DIR$/crap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="319">
+          <caret line="166" column="93" selection-start-line="166" selection-start-column="93" selection-end-line="166" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AIvsPlayerGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
           <folding>
-            <element signature="e#467#609#0" />
-            <element signature="e#680#810#0" />
-            <element signature="e#840#1191#0" />
-            <element signature="e#1225#1572#0" />
-            <element signature="e#1895#2252#0" />
-            <element signature="e#2278#2553#0" />
+            <element signature="e#632#885#0" />
+            <element signature="e#645#775#0" />
+            <element signature="e#805#1158#0" />
+            <element signature="e#1192#1539#0" />
+            <element signature="e#1862#2219#0" />
+            <element signature="e#2577#2677#0" />
+            <element signature="e#2706#2901#0" />
+            <element signature="e#3346#3674#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regular_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/good_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#112#231#0" />
+            <element signature="e#241#360#0" />
+            <element signature="e#2266#2842#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bad_algorithm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#1#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bord.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="200" column="46" selection-start-line="200" selection-start-column="46" selection-end-line="200" selection-end-column="46" />
+        <state relative-caret-position="1030">
+          <caret line="262" column="23" selection-start-line="262" selection-start-column="23" selection-end-line="262" selection-end-column="23" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

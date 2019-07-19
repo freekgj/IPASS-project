@@ -1,8 +1,5 @@
-from itertools import product
-
+from AIvsPlayerGame import theCode, colorCode, possibleCodes
 import numpy
-
-from AIvsPlayerGame import theCode, colorCode
 import random
 
 codeA = {'white':0,
@@ -23,8 +20,6 @@ codeB = {'white':0,
 
 def theAlgorithm(listPossibleCodesLeft, feedbackpins, lastGuess):
     if theCode['firstRound']:
-        print("first round")
-        print("lastguess:", lastGuess)
         aantalKleuren = 6
         lengthOfCode = 4
         listPossibleCodesLeft = possibleCodes(aantalKleuren, lengthOfCode)
@@ -36,31 +31,23 @@ def theAlgorithm(listPossibleCodesLeft, feedbackpins, lastGuess):
         pin4 = pin3
     else:
         deleteItems = []
-        listPossibleCodesLeft.remove(lastGuess)
         for code in listPossibleCodesLeft:
             correctCode = checkValidationCode(lastGuess, code)
             if correctCode != feedbackpins:
                 deleteItems.append(code)
         for item in deleteItems:
             listPossibleCodesLeft.remove(item)
-        print(listPossibleCodesLeft)
-        guessCode = numpy.random.choice(listPossibleCodesLeft)
-        print(guessCode)
+        if listPossibleCodesLeft != []:
+            guessCode = numpy.random.choice(listPossibleCodesLeft)
+            listPossibleCodesLeft.remove(guessCode)
+        else:
+            guessCode = [0, 0, 0, 0]
+
         pin1 = int(guessCode[0])
         pin2 = int(guessCode[1])
         pin3 = int(guessCode[2])
         pin4 = int(guessCode[3])
-
     return [[pin1, pin2, pin3, pin4], listPossibleCodesLeft]
-
-def possibleCodes(aantalKleuren, lengthOfCode):
-    colors = ''
-    for color in range(aantalKleuren):
-        colors += str(color + 1)
-    listWithPossibleCodes = list(product(colors, repeat=lengthOfCode))
-    for codeIndex in range(len(listWithPossibleCodes)):
-        listWithPossibleCodes[codeIndex] = "".join(listWithPossibleCodes[codeIndex])
-    return listWithPossibleCodes
 
 def checkValidationCode(code1, code2):
     setDictValue0()
