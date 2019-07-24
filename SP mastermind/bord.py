@@ -1,6 +1,9 @@
+import os
+import sys
+import pydoc
 import tkinter as tk
 from AIvsPlayerGame import changeColor, setCode, theCode, setRow, getRow, changeGoodOrBad, colorCode, setGoodOrBad, \
-    goodBadClickedFinal, setGoodOrBadToZero, setPinsClickedToZero, masterReset
+    goodBadClickedFinal, setGoodOrBadToZero, setPinsClickedToZero, masterReset, possibleCodes
 from bad_algorithm import responseAlgorithm1
 from good_algorithm import theAlgorithm
 
@@ -23,7 +26,6 @@ class Program(tk.Tk):
         self.geometry("{}x{}+-7+0".format(screenWidth, screenHeight-27))
 
         """dit vormt de omgeving waarin frames geplaatst kunnen worden."""
-
         container = tk.Frame(self)
         container.pack(side="top", fill="both", expand=True)
         container.grid_rowconfigure(0, weight=1)
@@ -43,43 +45,43 @@ class Program(tk.Tk):
         self.showFrame("MainPage")
 
     def showFrame(self, pageName):
+        """Plaatst de gewenste frame voor de andere frames."""
         frame = self.frames[pageName]
         frame.tkraise()
 
 class MainPage(tk.Frame):
-
+    """In deze class vind je het hoofdmenu"""
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent, bg='white')
         self.controller = controller
-
-        frame1 = tk.Frame(self, bg="white")
-        frame2 = tk.Frame(self, bg="white")
-        label1 = tk.Label(frame1, text="Welkom bij Artificial Intelligence mastermind!", fg='black', bg="white")
-        label1.config(font='Arial 35 bold')
+        frameBovenMainpage = tk.Frame(self, bg="red")
+        frameOnderMainpage = tk.Frame(self, bg="white")
+        titel = tk.Label(frameBovenMainpage, text="Welkom bij Freek's mastermind super solver!", fg='black', bg="white")
+        titel.config(font='Arial 35 bold')
         """wat doet SUNKEN????"""
 
         photo_image = tk.PhotoImage(file='mastermind.png')
-        photo_label = tk.Label(frame1, image=photo_image, width=100, height=290)
+        photo_label = tk.Label(frameBovenMainpage, image=photo_image, width=100, height=290)
         photo_label.image = photo_image
-        button1 = tk.Button(frame2, text="start game AI vs player", height=5, width=23, fg="white", bg="black",
+        startGameButton = tk.Button(frameOnderMainpage, text="start game AI vs player", height=5, width=23, fg="white", bg="black",
                             command=lambda: controller.showFrame("AIvsPlayer"))
-        button2 = tk.Button(frame2, text="Uitleg van het spel", height=5, width=23, fg='white', bg='black',
+        uitlegSpelButton = tk.Button(frameOnderMainpage, text="Uitleg van het spel", height=5, width=23, fg='white', bg='black',
                             command=lambda: controller.showFrame("SpelUitleg"))
-        button3 = tk.Button(frame2, text="Exit game", height=5, width=23, fg='white', bg='black', command=frame1.quit)
+        exitGameButton = tk.Button(frameOnderMainpage, text="Exit game", height=5, width=23, fg='white', bg='black', command=frameBovenMainpage.quit)
         statusbar = tk.Label(self, bd=1, relief=tk.SUNKEN, padx=10, pady=20,
                              bg="light blue", text="Copyright© Freek Gerrits Jans")
 
-        frame1.pack(pady=0, expand=tk.TRUE)
-        frame2.pack(expand=tk.TRUE)
-        label1.pack(side=tk.TOP, fill=tk.X)
+        frameBovenMainpage.pack(pady=0, expand=tk.TRUE)
+        frameOnderMainpage.pack(expand=tk.TRUE)
+        titel.pack(side=tk.TOP, fill=tk.X)
         photo_label.pack(side=tk.TOP, fill=tk.X)
         statusbar.pack(side=tk.BOTTOM, fill=tk.BOTH)
-        button1.pack(side=tk.LEFT, fill=tk.X, padx=5)
-        button2.pack(side=tk.LEFT, fill=tk.X, padx=5)
-        button3.pack(side=tk.LEFT, fill=tk.X, padx=5)
+        startGameButton.pack(side=tk.LEFT, fill=tk.X, padx=5)
+        uitlegSpelButton.pack(side=tk.LEFT, fill=tk.X, padx=5)
+        exitGameButton.pack(side=tk.LEFT, fill=tk.X, padx=5)
 
 class AIvsPlayer(tk.Frame):
-
+    """In deze class vind"""
     def __init__(self, parent, controller):
 
         tk.Frame.__init__(self, parent, bg="grey")
@@ -125,7 +127,7 @@ class AIvsPlayer(tk.Frame):
         --> https://www.youtube.com/watch?v=Y6cir7P3YUk&list=PLQVvvaa0QuDclKx-QpC9wntnURXVJqLyk&index=3 <--"""
 
         returnToHomepageButton = tk.Button(frame5, text="Return to mainpage", height=5, width=23, fg="white", bg="black",
-                            command=lambda: controller.showFrame("MainPage") and masterReset())
+                            command=lambda: masterReset())
         codeSetPin1Button = tk.Button(frame5, height=2, width=5, command=lambda: configBut(1), bg='grey')
         codeSetPin2Button = tk.Button(frame5, height=2, width=5, command=lambda: configBut(2), bg='grey')
         codeSetPin3Button = tk.Button(frame5, height=2, width=5, command=lambda: configBut(3), bg='grey')
@@ -199,13 +201,10 @@ class AIvsPlayer(tk.Frame):
             setGoodOrBad()
             finalState = (goodBadClickedFinal['black'], goodBadClickedFinal['white'])
             codeOfPlayer = (str(theCode['pin1']) + str(theCode['pin2']) + str(theCode['pin3']) + str(theCode['pin4']))
+
+            """https://www.youtube.com/watch?v=TQJRM8hIbXA&list=PLQVvvaa0QuDclKx-QpC9wntnURXVJqLyk&index=12"""
             if finalState == (4, 0):
                 uitkomstAlgorithm.config(text="""The AI have guessed the game!""", font="Arial 25 bold")
-                theCode['gameWon'] = True
-
-            elif theCode['firstRound'] == False and codeOfPlayer not in possibleCodesLeft and finalState != (4, 0):
-                uitkomstAlgorithm.config(text="""Oh oh, you cheated, don't do that again!""", font="Arial 25 bold")
-                theCode['gameWon'] = True
 
             if theCode['codeSet'] == False:
                 setCode()
@@ -218,7 +217,6 @@ class AIvsPlayer(tk.Frame):
             if theCode['setAlgorithm'] == 1:
                 AIquessesInColor = []
                 AIquesses = responseAlgorithm1()
-                print(AIquesses)
                 for colorNumber in AIquesses[0]:
                     AIquessesInColor.append(colorCode(colorNumber))
 
@@ -255,12 +253,15 @@ class AIvsPlayer(tk.Frame):
                 for item in lastGuessInt:
                     lastGuess += str(item)
 
-
             setPinsClickedToZero()
             setGoodOrBadToZero()
+            if theCode['firstRound'] == False and codeOfPlayer not in possibleCodesLeft and codeOfPlayer != lastGuess and finalState != (4,0):
+                uitkomstAlgorithm.config(text="""Oh oh, you cheated, don't do that again!""", font="Arial 25 bold")
             theCode['firstRound'] = False
+
         def masterReset():
-            print('hi')
+            python = sys.executable
+            os.execl(python, python, *sys.argv)
 
 class SpelUitleg(tk.Frame):
 

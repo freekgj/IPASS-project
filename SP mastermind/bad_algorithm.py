@@ -11,9 +11,6 @@ def responseAlgorithm1():
     listPossibleCodesLeft = possibleCodes(aantalKleuren, lengthOfCode)
     while listPossibleCodesLeft != []:
         guessCode = numpy.random.choice(listPossibleCodesLeft)
-        print("these are the codes")
-        print(guessCode)
-        print(codeOfPlayer)
         if int(guessCode) != codeOfPlayer:
             listPossibleCodesLeft.remove(guessCode)
             beurtenteller +=1

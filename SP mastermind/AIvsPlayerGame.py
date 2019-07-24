@@ -6,7 +6,8 @@ theCode = {'pin1': 0,
            'pin4': 0,
            'codeSet': False,
            'firstRound': True,
-           'setAlgorithm': 1
+           'setAlgorithm': 1,
+           'reset': False
            }
 
 timesClicked = {'timesClickedPin1':0,
