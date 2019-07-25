@@ -1,0 +1,7 @@
+Opponent module
+===============
+
+.. automodule:: Opponent
+   :members:
+   :undoc-members:
+   :show-inheritance:
