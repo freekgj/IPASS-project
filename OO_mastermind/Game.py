@@ -1,6 +1,7 @@
-# imports
+
 class Game():
     def __init__(self, code, opponent, opponentNumber):
+        """Maakt data aan voor een nieuw spel."""
         self.secretCode = code
         self.opponent = opponent
         self.opponentInNumber = opponentNumber
@@ -13,6 +14,9 @@ class Game():
         self.gameWon = False
 
     def nextMove(self):
+        """Bij het aanklikken van de knop 'OFF' in een spel Mastermind, zal deze functie worden aangeroepen. nextMove()
+        zal een keer een algoritme vragen om een gok te doen en vraagt na deze functie weer aan te roepen datzelfde
+        algoritme nog een keer een gok te wagen."""
         if not self.gameWon:
             self.lastGuess = self.opponent.calculateNextMove(self.lastGuess, self.lastFeedback, self.beurt)
             if str(self.secretCode) in self.opponent.possibleMoves or self.lastGuess == str(self.secretCode):
@@ -21,10 +25,12 @@ class Game():
                 print(self.opponent.possibleMoves)
             else:
                 self.playerCheat = True
-
         return self.convertToColors(self.lastGuess), self.playerCheat, self.gameWon
 
     def nextMoveWithAutoFeedback(self):
+        """Bij het aanklikken van de knop 'ON' in een spel Mastermind, zal deze functie worden aangeroepen.
+        nextMoveWithAutoFeedback() zal een algoritme om een gok vragen en daar vervolgens zelf feedback op geven tot de
+        code geraden is."""
         if not self.gameWon:
             if self.opponentInNumber == 1:
                 while not self.lastGuess == self.secretCode or self.lastGuess == []:  # TODO: check of self.secretCOde in zelfde format als guess
@@ -41,6 +47,7 @@ class Game():
         return self.convertToColors(self.lastGuess), self.lastFeedback, self.beurt, self.gameWon
 
     def autoFeedback(self):
+        """Deze functie geeft automatisch feedback op een gok van een algoritme."""
         codeA = {'1': 0,
                  '2': 0,
                  '3': 0,
@@ -77,6 +84,7 @@ class Game():
         return (black, white)
 
     def convertToColors(self, guess):
+        """Veranderd kleur codes in getal naar de bijbehorende kleur."""
         guessInColorsList = []
         for item in guess:
             if item == '0':
@@ -97,15 +105,14 @@ class Game():
                 print("colorCode error")
         return guessInColorsList
 
-        # zet string van 4 getallen om in lijst met 4 kleuren
-
     def update(self, feedback, autofeedback):
+        """Wordt aangeroepen wanneer de GUI interactie maakt met het spelverloop. (Game.py)"""
         self.lastFeedback = feedback
-        # check of antwoord klopt bij laatste gok, anders fout!
+
         if self.lastFeedback == (4, 0):
             self.gameWon = True
-        # vraag opponent om volgende zet
 
+        # vraag opponent om volgende zet
         if autofeedback:
             GUIReturnValue = self.nextMoveWithAutoFeedback()
         elif autofeedback == False:

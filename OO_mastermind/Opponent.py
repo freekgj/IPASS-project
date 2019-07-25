@@ -5,11 +5,13 @@ import numpy as np
 
 class Opponent():
     def __init__(self):
+        """Maakt een opponent aan met data die voor iedere oponent wordt gebruikt."""
         self.aantalKleuren = 6
         self.lengthOfCode = 4
         self.possibleMoves = self.calculateAllPossibleCombinations()
 
     def calculateAllPossibleCombinations(self):
+        """Maakt een lijst aan met daarin alle mogelijke codecombinaties."""
         # hier de functie die alle mogelijke kleurcombinaties genereerd
         colors = ''
         for color in range(self.aantalKleuren):
@@ -20,10 +22,12 @@ class Opponent():
         return listWithPossibleCodes
 
     def calculateNextMove(self, lastGuess, lastFeedback, beurt):
+        """Berekent de volgende gok en geeft dat terug."""
         return [0, 0, 0, 0]
 
 class NaiefOpponent(Opponent):
     def calculateNextMove(self, lastGuess, lastFeedback, beurt):
+        """Berekent de volgende gok en geeft dat terug."""
         self.lastGuess = np.random.choice(self.possibleMoves)
         self.possibleMoves.remove(self.lastGuess)
         return self.lastGuess
@@ -31,6 +35,7 @@ class NaiefOpponent(Opponent):
 class KnuthOpponent(Opponent):
 
     def calculateNextMove(self, lastGuess, lastFeedback, beurt):
+        """Berekent de volgende gok en geeft dat terug."""
         self.lastGuess = lastGuess
         self.lastFeedback = lastFeedback
         self.beurt = beurt
@@ -54,6 +59,7 @@ class KnuthOpponent(Opponent):
         return nextGuess
 
     def checkCode(self, code1, code2):
+        "Checkt of de feedback van de laatste gok overeen komt met dat van de code die wordt meegegeven."
         codeA = {'1': 0,
                  '2': 0,
                  '3': 0,
