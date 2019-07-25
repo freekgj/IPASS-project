@@ -1,17 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc8dd68a-7ed5-4fe5-80ee-f061d6deecab" name="Default Changelist" comment="">
+    <list default="true" id="e16d0736-bbbf-4a0d-8b37-0a2c9d163272" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OO_mastermind/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/Game.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/Opponent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/UI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/mastermind.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/pydoc/Game.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/pydoc/OO_mastermind.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/pydoc/Opponent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OO_mastermind/pydoc/UI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/OO mastermind.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/Program/Game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/Program/Opponent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/Program/UI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/Program/mastermind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/.buildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/.doctrees/Game.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/.doctrees/Opponent.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/.doctrees/UI.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/.doctrees/environment.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/.doctrees/index.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/.doctrees/modules.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/Game.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/Opponent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/UI.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_sources/Game.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_sources/Opponent.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_sources/UI.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_sources/modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/_stemmer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/documentation_options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/jquery-3.2.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/language_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/translations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/underscore-1.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/_static/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/py-modindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OO_mastermind/docs/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.idea/Mastermind_Program.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/AIvsPlayerGame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/analyseBADalgorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/analyseGOODalgorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/bad_algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/bord.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/good_algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/mastermind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SP_mastermind/regular_algorithm.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,32 +84,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/OO_mastermind$UI.coverage" NAME="UI Coverage Results" MODIFIED="1564074864626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sphinx/conf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="14" column="31" selection-start-line="14" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sphinx/rst/conf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sphinx/rst/UI.rst">
-          <provider selected="true" editor-type-id="restructured-text-editor" />
+        <entry file="file://$PROJECT_DIR$/Program/UI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>upda</find>
+      <find>Frame</find>
+      <find>row</find>
+      <find>freeze</find>
+      <find>print</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,38 +125,29 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/OO mastermind/Opponent.py" />
-        <option value="$PROJECT_DIR$/OO mastermind/UI.py" />
-        <option value="$PROJECT_DIR$/OO mastermind/Game.py" />
-        <option value="$PROJECT_DIR$/sphinx/conf.py" />
-        <option value="$PROJECT_DIR$/sphinx/rst/conf.py" />
-        <option value="$PROJECT_DIR$/sphinx/rst/UI.rst" />
+        <option value="$PROJECT_DIR$/AI not oo/AIvsPlayerGame.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/AI not oo/test.py" />
+        <option value="$PROJECT_DIR$/Opponent.py" />
+        <option value="$PROJECT_DIR$/Game.py" />
+        <option value="$PROJECT_DIR$/UI.py" />
+        <option value="$PROJECT_DIR$/source/conf.py" />
+        <option value="$PROJECT_DIR$/../sphinx/conf.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Mastermind_Program.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/deployment.xml" />
-      </list>
-    </option>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,30 +155,26 @@
               <item name="Mastermind_Program" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mastermind_Program" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Mastermind_Program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mastermind_Program" type="462c0819:PsiDirectoryNode" />
-              <item name="OO_mastermind" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\freek\Desktop\OO mastermind" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -130,19 +190,19 @@
   </component>
   <component name="RunManager" selected="Python.UI">
     <configuration name="UI" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mastermind_Program" />
+      <module name="OO mastermind" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OO mastermind" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OO mastermind/UI.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,42 +211,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="analyseBADalgorithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mastermind_Program" />
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="OO mastermind" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SP mastermind" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AI not oo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SP mastermind/analyseBADalgorithm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="analyseGOODalgorithm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Mastermind_Program" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SP mastermind" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SP mastermind/analyseGOODalgorithm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AI not oo/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,8 +236,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.UI" />
-        <item itemvalue="Python.analyseBADalgorithm" />
-        <item itemvalue="Python.analyseGOODalgorithm" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -208,32 +245,34 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc8dd68a-7ed5-4fe5-80ee-f061d6deecab" name="Default Changelist" comment="" />
-      <created>1564004819230</created>
+      <changelist id="e16d0736-bbbf-4a0d-8b37-0a2c9d163272" name="Default Changelist" comment="" />
+      <created>1563828846400</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1564004819230</updated>
-      <workItem from="1564004822877" duration="2305000" />
-      <workItem from="1564057702921" duration="7583000" />
-      <workItem from="1564079396754" duration="1045000" />
-      <workItem from="1564082242687" duration="33000" />
-      <workItem from="1564082289643" duration="326000" />
+      <updated>1563828846400</updated>
+      <workItem from="1563828854548" duration="1624000" />
+      <workItem from="1563868182140" duration="2199000" />
+      <workItem from="1564003521839" duration="6000" />
+      <workItem from="1564003630011" duration="33000" />
+      <workItem from="1564072927181" duration="1815000" />
+      <workItem from="1564076263487" duration="1348000" />
+      <workItem from="1564083753902" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11303000" />
+    <option name="totallyTimeSpent" value="73597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23288591" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21346705" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31417623" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25201073" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39974457" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -251,13 +290,13 @@
       <window_info anchor="right" id="Database" order="5" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23288591" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.48271093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31417623" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2554517" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -284,58 +323,50 @@
     <SUITE FILE_PATH="coverage/Mastermind_Program$analyseGOODalgorithm.coverage" NAME="analyseGOODalgorithm Coverage Results" MODIFIED="1564058070687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SP mastermind" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SP mastermind/analyseBADalgorithm.py" />
-    <entry file="file://$PROJECT_DIR$/SP mastermind/analyseGOODalgorithm.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/tkinter/__init__.py">
+    <entry file="file://$PROJECT_DIR$/AI not oo/UI.py" />
+    <entry file="file://$PROJECT_DIR$/AI not oo/AIvsPlayerGame.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="1136" column="8" selection-start-line="1136" selection-start-column="8" selection-end-line="1136" selection-end-column="8" />
+        <state relative-caret-position="230">
+          <caret line="1704" selection-start-line="1704" selection-end-line="1704" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OO mastermind/Opponent.py" />
-    <entry file="file://$PROJECT_DIR$/OO mastermind/Game.py" />
-    <entry file="file://$PROJECT_DIR$/OO mastermind/UI.py" />
-    <entry file="file://$PROJECT_DIR$/sphinx/scripts/Game.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1354042035/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="749" column="8" selection-start-line="749" selection-start-column="8" selection-end-line="749" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/AI not oo/test.py" />
+    <entry file="file://$PROJECT_DIR$/Opponent.py" />
+    <entry file="file://$PROJECT_DIR$/Game.py" />
+    <entry file="file://$PROJECT_DIR$/source/conf.py" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding>
+            <element signature="e#534#543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/scripts/Game.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/html/Opponent.html">
+    <entry file="file://$PROJECT_DIR$/UI.py" />
+    <entry file="file://$PROJECT_DIR$/Program/UI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/rst/Opponent.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/rst/modules.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/rst/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/rst/Game.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/html/search.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OO_mastermind/source/conf.py" />
-    <entry file="file://$PROJECT_DIR$/sphinx/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="31" selection-start-line="14" selection-end-line="15" />
+        <state relative-caret-position="500">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/rst/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sphinx/rst/UI.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>
