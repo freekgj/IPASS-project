@@ -1,5 +1,5 @@
-# AI guesser mastermind
-Let the AI guess your provided color code or play a game of mastermind yourself.
+# Mastermind AI code cracker 
+Let the AI guess your provided color code or play a game of mastermind yourself. Implemented Knuth's algorithm to crack your code.
 
 ## Setup
 1. download this directory
